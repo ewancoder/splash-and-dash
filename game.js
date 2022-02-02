@@ -49,7 +49,7 @@ let main = (async function main() {
             data: secondData,
             lineTension: 0,
             fill: false,
-            borderColor: '#7af',
+            borderColor: '#9bf',
             showLine: true
         };
 
