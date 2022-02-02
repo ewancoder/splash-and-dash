@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Splash and Dash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding: 100px;">
+
+  <div class="input-field">
+    <label for="totalRaceHours">Total race (hours):</label>
+    <input id="totalRaceHours" value="24" />
+  </div>
+
+  <div class="input-field">
+    <label for="tankSize">Tank size:</label>
+    <input id="tankSize" value="120" />
+  </div>
+
+  <div class="input-field">
+    <label for="pitstopTimeSeconds">Pit stop time (seconds):</label>
+    <input id="pitstopTimeSeconds" value="90" />
+  </div>
+
+  <div class="input-field">
+    <label for="fuelPerLap">Pushing fuel per lap:</label>
+    <input id="fuelPerLap" value="5.1" />
+  </div>
+
+  <div class="input-field">
+    <label for="laptimeSeconds">Pushing laptime (seconds):</label>
+    <input id="laptimeSeconds" value="111.4" />
+  </div>
+
+  <div class="input-field">
+    <label for="savingFuelPerLap">Saving fuel per lap:</label>
+    <input id="savingFuelPerLap" value="4.5" />
+  </div>
+
+  <div class="input-field">
+    <label for="slowerLaptimeSeconds">Saving laptime (seconds):</label>
+    <input id="slowerLaptimeSeconds" value="111.9" />
+  </div>
+
+  <button id='calculate' onclick="main()">Calculate</button>
+
+  <div id='laptimesChartDiv' style="width: 1200; height: 800; margin: auto">
+    <canvas id="laptimesChart"></canvas>
+  </div>
+  <div id='fuelChartDiv' style="width: 1200; height: 800; margin: auto">
+    <canvas id="fuelChart"></canvas>
+  </div>
+  <script type="module" src="game.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
